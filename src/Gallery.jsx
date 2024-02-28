@@ -5,7 +5,7 @@ import beast2Image from "./assets/horned-beast2.jpg";
 const Gallery = () => {
     return (
         <div>
-            <h2>This is the Gallery</h2>
+            <h2>Gallery</h2>
             <div>
             <HornedBeasts
                 title="Animal 1"

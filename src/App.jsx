@@ -1,23 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
-import Gallery from './Gallery.jsx'
-import './App.css'
+import { useState } from 'react';
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
+import data from './assets/data.json';
+import Button from 'react-bootstrap/Button';
+import Card from 'react-bootstrap/Card';
 
-function App() {
-  const [count, setCount] = useState(0)
 
+function BasicExample() {
   return (
-    <>
-      <div>
-        <Header />
-        <Gallery />
-        <Footer />
-      </div>
-    </>
-  )
+    <Card style={{ width: '18rem' }}>
+      <Card.Img variant="top" src="holder.js/100px180" />
+      <Card.Body>
+        <Card.Title>Card Title</Card.Title>
+        <Card.Text>
+          Some quick example text to build on the card title and make up the
+          bulk of the content.
+        </Card.Text>
+        <Button variant="primary">💖 Like</Button>
+      </Card.Body>
+    </Card>
+  );
 }
 
-export default App
+function App() {
+
+  return (
+    <div>
+      <Header />
+      <BasicExample />
+      <Footer />
+    </div>
+  );
+}
+
+export default App;
