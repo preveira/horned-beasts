@@ -1,23 +1,25 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import HornedBeasts from "./HornedBeasts";
-import beast1Image from "./assets/horned-beast1.jpg";
-import beast2Image from "./assets/horned-beast2.jpg";
+import data from './assets/data.json';
+import Row from 'react-bootstrap/Row';
 
 const Gallery = () => {
     return (
         <div>
             <h2>Gallery</h2>
             <div>
-            <HornedBeasts
-                title="Animal 1"
-                imageUrl={beast1Image}
-                description="Southern Horned Beast"
-            />
-            <HornedBeasts
-                title="Animal 2"
-                imageUrl={beast2Image}
-                description="Mediterranian Horned Beast"
-            />
-        </div>
+            <Row xs="auto" md="auto" lg="auto">
+                {data.map(obj => {
+                return (
+                    <HornedBeasts 
+                    key={obj._id}
+                    title={obj.title} 
+                    description={obj.description} 
+                    imageUrl={obj.image_url} />  
+                )
+                    })}
+            </Row>
+            `</div>
         </div>
         
     );
