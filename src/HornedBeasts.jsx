@@ -26,6 +26,7 @@ const HornedBeasts = (props) => {
             <Card.Text>
               {props.description}
             </Card.Text>
+            <p>Number of Horns: {props.horns}</p>
             <Button onClick= {(handleLike)} variant="primary">💖 Like</Button>
             <span style={{ marginLeft: "10px"}}>{likes} Likes</span>
           </Card.Body>
