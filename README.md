@@ -50,3 +50,15 @@ Start time: 7pm
 Finish time: 9pm
 
 Actual time needed to complete: 2 hours
+
+![Lab-04-Lighthouse](lab-04-lighthouse.png)
+
+Number and name of feature: Feature 5:Filter by Numbers of Horns
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 10pm
+
+Finish time: 11:20pm
+
+Actual time needed to complete: 1 hour 20 minutes

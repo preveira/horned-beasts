@@ -45,7 +45,6 @@ function App() {
             <p>Thank you!</p>
           )
         }
-          {/* {bestBeast} */}
         </Modal.Body>
       </Modal>
     <div>
