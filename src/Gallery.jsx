@@ -3,7 +3,8 @@ import HornedBeasts from "./HornedBeasts";
 import data from './assets/data.json';
 import Row from 'react-bootstrap/Row';
 
-const Gallery = () => {
+const Gallery = (props) => {
+    console.log(props);
     return (
         <div>
             <h2>Gallery</h2>
@@ -15,11 +16,13 @@ const Gallery = () => {
                     key={obj._id}
                     title={obj.title} 
                     description={obj.description} 
-                    imageUrl={obj.image_url} />  
+                    imageUrl={obj.image_url}
+                    onWin={props.onWin}
+                    />  
                 )
                     })}
             </Row>
-            `</div>
+            </div>
         </div>
         
     );

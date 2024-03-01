@@ -6,7 +6,18 @@ import Button from 'react-bootstrap/Button';
 
 
 const HornedBeasts = (props) => {
+  console.log(props);
     const [likes, setLikes] = useState(0);
+  
+    const handleLike = () => {
+      if (likes < 10) {
+        if (likes === 9) {
+          props.onWin(props.imageUrl, props.title, props.description, likes + 1);
+        }
+        setLikes(likes + 1);
+      }
+    }
+    
     return (
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src={props.imageUrl} alt="horned beast image" />
@@ -15,10 +26,12 @@ const HornedBeasts = (props) => {
             <Card.Text>
               {props.description}
             </Card.Text>
-            <Button onClick={() => setLikes(likes + 1)} variant="primary">💖 Like</Button>
+            <Button onClick= {(handleLike)} variant="primary">💖 Like</Button>
+            <span style={{ marginLeft: "10px"}}>{likes} Likes</span>
           </Card.Body>
         </Card>
       );
     }
+  
 
 export default HornedBeasts;
