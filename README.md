@@ -39,3 +39,14 @@ Finish time: 12pm
 
 Actual time needed to complete: 4 hours
 
+![Lab-03-Lighthouse](lab-03-lighthouse.png)
+
+Number and name of feature: Feature 4: Display a Modal
+
+Estimate of time needed to complete: 2 hours
+
+Start time: 7pm
+
+Finish time: 9pm
+
+Actual time needed to complete: 2 hours
